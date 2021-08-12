@@ -31,7 +31,7 @@ uint8_t TouchButton_Process() {
     if (digitalRead(TP_PIN_PIN) == HIGH) {  //如果硬件检测到有按键被按下
         relased = false;                    //按键释放状态设置为false
         if (!pressed) {                     //按键按下状态切换
-            pressed = true;                 //切换按键的状态
+            pressed = true;                 //切换按键的状态  //
             pressedTime = millis();         //记录按键被按下的时间
             ++pressedCounter;               //按键按下次数
         } else {                            //如果按键按下状态已经切换为true，记录按下的时间
