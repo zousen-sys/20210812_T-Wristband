@@ -85,7 +85,7 @@ uint8_t Main_RTC_Process(){
         }
         //页面显示周期中
         if(Message_Duty) {  
-            if(Hardware_Timer_Refresh(TIMER_TWO, MESSAGE_DELAY_TIME)) { 
+            if(Hardware_Timer_Refresh(TIMER_TWO, MESSAGE_DELAY_TIME)) { //时间到达
                 Message_Duty = false;
                 Display_initial_refresh();
                 initail = 1;
